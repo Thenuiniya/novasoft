@@ -1,0 +1,191 @@
+.qr-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Side */
+.qr-left {
+  /* width: 40%; */
+  text-align: center;
+}
+
+.qr-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.qr-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /* padding: 20px; */
+  width: 100%;
+}
+
+.main-qr {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.upi-id {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.upi-name {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.qr-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qr-btn {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.download {
+  background: #eee;
+}
+
+.share {
+  background: #eee;
+}
+
+/* Right Side */
+.qr-right {
+  /* width: 60%; */
+}
+
+.qr-tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.qr-tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qr-tab.active {
+  background: #41794A;
+  color: white;
+  border-radius: 6px;
+}
+
+.qr-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.qr-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.mini-qr {
+  width: 60px;
+}
+
+.qr-details {
+  flex: 1;
+}
+
+.qr-title {
+  font-weight: bold;
+}
+
+.qr-sub {
+  font-size: 14px;
+  color: #666;
+}
+
+.qr-status {
+  color: #41794A;
+  font-weight: bold;
+}
+
+.qr-more-btn {
+  background: #41794A;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qr-status {
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.qr-status.open {
+  background: #c8e6c9;
+}
+
+.qr-radio-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.qr-radio-box label {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qr-radio-box input {
+  accent-color: #41794A;
+  /* green radio */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width:756px) {
+  .below-down {
+    margin-top: 50px !important;
+  }
+}

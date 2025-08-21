@@ -1,0 +1,48 @@
+.settlement-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.status-badge.pending {
+  /* background: #fff3cd; */
+  color: #faac46;
+  border:2px solid #faac46; 
+}
+
+.status-badge.failed {
+  border:2px solid red; 
+  color: red;
+}
+
+.status-badge.success {
+  color: green;
+    border:2px solid green; 
+   
+
+}
+
+@media (max-width:756px) {
+  .table-scroll-x {
+    overflow-x: scroll !important;
+  }
+
+  th {
+    padding: 20px !important;
+    white-space: pre;
+  }
+}
+
+.custom-modal .modal-dialog {
+  max-width: 70%;
+}

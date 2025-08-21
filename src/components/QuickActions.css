@@ -1,0 +1,57 @@
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px;
+}
+
+.action-card {
+  /* display: flex; */
+  align-items: center;
+  background: #f3faf6;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* .action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+} */
+
+.action-icon {
+  background: #2f6d42;
+  color: white;
+  font-size: 32px;
+  /* padding: 14px; */
+  border-radius: 50%;
+  margin-right: 14px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.action-info {
+  flex: 1;
+}
+
+.action-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f6d42;
+  margin: 0;
+}
+
+.action-sub {
+  font-size: 13px;
+  color: #555;
+  margin: 4px 0 0;
+}
+
+.action-arrow {
+  font-size: 20px;
+  color: #2f6d42;
+  font-weight: bold;
+}

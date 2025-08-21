@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# React.js Developer Assessment Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* [Setup Instructions](#setup-instructions)
+* [Architecture / Approach](#architecture--approach)
+* [Time Spent](#time-spent)
+* [Known Limitations](#known-limitations)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository**
 
-### `npm test`
+```bash
+git clone <repository-url>
+cd novasoft
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Run the application**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Open in browser**
+   The app will run at [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Architecture / Approach
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Frontend:** React.js with Bootstrap and React-Bootstrap components.
+* **State Management:** React `useState` and `useEffect` hooks.
+* **API Calls:** Axios for fetching transaction history and other data.
+* **Modals & Alerts:** SweetAlert2 for loading and alert popups.
+* **Component Structure:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * `Header` – Navbar-style header with logo and profile info.
+  * `Dashboard` – Displays collections, settlements, and stats.
+  * `Modal` – Multiple modals created for pages.
+* **Styling:** Inline styles for small tweaks; CSS classes for layout and responsive design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Approach Highlights:**
 
-## Learn More
+* Used `useEffect` for API calls and loading states.
+* SweetAlert2 for async loading indicators and error handling.
+* Flexbox (`d-flex`, `justify-content-between`) for layout instead of excessive `Row/Col`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Time Spent
 
-### Code Splitting
+* Estimated total development time: **6 hours and 30 minutes**
+* Includes frontend, API integration, and styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Known Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Backend responses may be delayed; handled with loading popup.
+* Mobile responsiveness may need further testing for smaller screens.
+* Some UI components use inline styles, which could be refactored into CSS modules.
+* Pagination handling is basic; advanced error handling for network failures not fully implemented.

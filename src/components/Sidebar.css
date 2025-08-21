@@ -1,0 +1,46 @@
+.nav-link {
+  color: white !important;
+  margin: 5px 0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.nav-link.active {
+  background-color: white !important;
+  color: #2d7a4c !important;
+  /* green text */
+  font-weight: 600;
+
+}
+
+.green-color-bg {
+  background-color: #198754;
+  /* Bootstrap green */
+}
+
+/* Normal links */
+.sidebar-link {
+  color: white !important;
+  border-radius: 0 !important;
+  padding: 10px 15px;
+}
+
+/* Active tab (same for desktop + mobile) */
+.sidebar-link.active-link {
+  background-color: white !important;
+  color: #198754 !important;
+  /* green text */
+  font-weight: bold;
+  border-radius: 10px !important;
+  padding: 15px !important;
+}
+
+.sider-container-height{
+
+  height:700px !important;
+  border: 1px solid #198754;
+  border-radius: 20px;
+
+
+
+}
